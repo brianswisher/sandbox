@@ -1,0 +1,32 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node source/make.index.css.js && node source/make.index.html.js",
+    "install": "bower install --save",
+    "start": "npm run build && http-server ./public",
+    "test": "node test/index.js",
+    "watch": "npm run build && live-server ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianswisher/sandbox.git"
+  },
+  "author": "Brian Swisher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianswisher/sandbox/issues"
+  },
+  "homepage": "https://github.com/brianswisher/sandbox#readme",
+  "dependencies": {
+    "bower": "^1.7.2",
+    "http-server": "^0.8.5"
+  },
+  "devDependencies": {
+    "bl": "^1.0.0",
+    "blue-tape": "^0.1.11",
+    "live-server": "^0.9.0"
+  }
+}
